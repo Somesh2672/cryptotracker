@@ -1,9 +1,18 @@
 .grid-container{
-    width: 330px;
-    height: 330px;
+    width: 300px;
     background-color: var(--darkgrey);
     border: 2px solid var(--darkgrey) ;
     border-radius: 0.5rem;
+}
+
+.grid-container:hover{
+    border-color: var(--green);
+    transition: all 0.3s;
+}
+
+.grid-container-red:hover{
+    border-color: var(--red)!important;
+    transition: all 0.3s;
 }
 
 .info-flex{
@@ -60,11 +69,6 @@
     color: var(--green);
 }
 
-.chip-red{
-    border: 2px solid var(--red) !important; 
-    color: var(--red) !important;
-}
-
 .icon-chip{
     border: 2px solid var(--green);
     border-radius: 50%;
@@ -76,4 +80,41 @@
     font-size: 1.1rem;
     color: var(--green);
 }
+
+.price-chip:hover, .icon-chip:hover {
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.chip-red {
+    border: 2px solid var(--red) !important; 
+    color: var(--red) !important;
+}
+
+.chip-red:hover{
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    transition: all 0.3s;
+}
+
+
+.info_container{
+    margin: 1.5rem;
+}
+
+.coin-price{
+    color: var(--green);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.total_volume, .market_cap{
+    color: var(--grey);
+    font-weight: 500;
+    font-size: 1rem ;
+}
+
+
+
 
