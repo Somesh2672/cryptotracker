@@ -1,0 +1,16 @@
+.List-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.List-row td {
+    text-align: left;
+    width: 18%;
+}
+
+.td-image{
+    width: 3rem !important;
+    margin-right: 1.5rem;
+}

@@ -9,6 +9,7 @@ import { Palette } from '@mui/icons-material';
 import { createTheme, ThemeProvider } from '@mui/material';
 import "./style.css";
 import Grid from '../Grid';
+import List from '../List';
 
 
 export default function TabsComponent({coins}) {
@@ -51,9 +52,9 @@ export default function TabsComponent({coins}) {
           </div>
           </TabPanel>
         <TabPanel value="list">
-        <div>{coins.map((item,i)=>{
-            return<p key={i}>{i+1}.{item.id}</p>
-          })}</div>
+        <table className='list-table'>{coins.map((item,i)=>{
+            return(<List coin={item} key={i}p></List>)
+          })}</table>
         </TabPanel>
       </TabContext>
     </ThemeProvider>
